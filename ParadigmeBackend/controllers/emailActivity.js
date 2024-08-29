@@ -7,15 +7,15 @@ exports.Activity = async function(email,subject,text,link,image){
         port: 465,
         secure: true,
         auth: {
-            user: 'developer@espsofttech.com',
-            pass: 'Espsoft123#'
+            user: '',
+            pass: ''
         },
         tls: {
             rejectUnauthorized: false
         }
     });
     var mailOptions = {
-        from: 'developer@espsofttech.com',
+        from: '',
         to: email,
         subject: subject,
         html: ` 
